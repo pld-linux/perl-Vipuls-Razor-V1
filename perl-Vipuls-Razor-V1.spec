@@ -1,15 +1,23 @@
+#
+# Conditional build:
+%bcond_with	tests	# perform "make test" (needs working, not busy /dev/audio!)
+#
 %include	/usr/lib/rpm/macros.perl
 Summary:	Spam should not be propagated beyond necessity
 Summary(pl):	Spam nie powinien byæ rozsiewany bez potrzeby
 Name:		perl-Vipuls-Razor-V1
 Version:	1.20
 Release:	3
-License:	Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://dl.sourceforge.net/razor/razor-agents-%{version}.tar.gz
 # Source0-md5:	3612455aca8221718d2bf4b94ca67197
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 3.0.3-16
+%if %{with tests}
+BuildRequires:	perl-Net-DNS
+%endif
 Obsoletes:	Razor
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -43,6 +51,8 @@ ufno¶ci zwi±zanych z poszczególnymi sygnaturami.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
