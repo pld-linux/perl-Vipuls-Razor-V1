@@ -3,7 +3,7 @@ Summary:	Spam should not be propagated beyond necessity
 Summary(pl):	Spam nie powinien byæ rozsiewany bez potrzeby
 Name:		perl-Vipuls-Razor-V1
 Version:	1.20
-Release:	3
+Release:	4
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://prdownloads.sourceforge.net/razor/razor-agents-%{version}.tar.gz
