@@ -39,7 +39,7 @@ ufno¶ci zwi±zanych z poszczególnymi sygnaturami.
 %setup -q -n razor-agents-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %install
