@@ -6,7 +6,7 @@ Version:	1.20
 Release:	3
 License:	Artistic
 Group:		Development/Languages/Perl
-Source0:	http://prdownloads.sourceforge.net/razor/razor-agents-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/razor/razor-agents-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 Obsoletes:	Razor
