@@ -59,8 +59,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes sample.txt
-%attr(755, root, root) %{_bindir}/*
-%dir %{perl_sitelib}/Razor
+%attr(755,root,root) %{_bindir}/*
+%dir %{perl_vendorlib}/Razor
 %{perl_vendorlib}/Razor/*
 %{_mandir}/man1/*
 %{_mandir}/man5/*
