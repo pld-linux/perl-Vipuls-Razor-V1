@@ -13,7 +13,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://dl.sourceforge.net/razor/razor-agents-%{version}.tar.gz
 # Source0-md5:	3612455aca8221718d2bf4b94ca67197
-BuildRequires:	perl-devel >= 5.6
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 %if %{with tests}
 BuildRequires:	perl-Net-DNS
