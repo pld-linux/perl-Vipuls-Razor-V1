@@ -40,15 +40,16 @@ ufno¶ci zwi±zanych z poszczególnymi sygnaturami.
 %setup -q -n razor-agents-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_mandir}/man5
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
-
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 install razor-whitelist.pod $RPM_BUILD_ROOT%{_mandir}/man5/razor-whitelist.5
 install razor.conf $RPM_BUILD_ROOT%{_mandir}/man5/razor.conf.5
 
@@ -60,6 +61,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes sample.txt
 %attr(755, root, root) %{_bindir}/*
 %dir %{perl_sitelib}/Razor
-%{perl_sitelib}/Razor/*
+%{perl_vendorlib}/Razor/*
 %{_mandir}/man1/*
 %{_mandir}/man5/*
