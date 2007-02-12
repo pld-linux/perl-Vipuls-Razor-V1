@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	Spam should not be propagated beyond necessity
-Summary(pl):	Spam nie powinien byæ rozsiewany bez potrzeby
+Summary(pl.UTF-8):   Spam nie powinien byÄ‡ rozsiewany bez potrzeby
 Name:		perl-Vipuls-Razor-V1
 Version:	1.20
 Release:	3
@@ -33,16 +33,16 @@ assignments based on consensus on report and revoke assertions which
 in turn is used for computing confidence values associated with
 individual signatures.
 
-%description -l pl
-Vipul's Razor to rozproszona, wspó³pracuj±ca sieæ wykrywania spamu.
-Przy udziale u¿ytkowników Razor stanowi rozproszony i stale
-uaktualniany katalog rozprzestrzenianego spamu, który jest odpytywany
-przez klientów pocztowych w celu filtrowania znanego spamu. Wykrywanie
-jest przeprowadzane za pomoc± statystycznych i losowych sygnatur,
-które efektywnie wykrywaj± mutuj±c± siê zawarto¶æ spamu. Wej¶cie od
-u¿ytkowników jest kontrolowane poprzez przypisan± reputacjê bazowan±
-na raportach i zapewnieniach, które s³u¿± do obliczania poziomów
-ufno¶ci zwi±zanych z poszczególnymi sygnaturami.
+%description -l pl.UTF-8
+Vipul's Razor to rozproszona, wspÃ³Å‚pracujÄ…ca sieÄ‡ wykrywania spamu.
+Przy udziale uÅ¼ytkownikÃ³w Razor stanowi rozproszony i stale
+uaktualniany katalog rozprzestrzenianego spamu, ktÃ³ry jest odpytywany
+przez klientÃ³w pocztowych w celu filtrowania znanego spamu. Wykrywanie
+jest przeprowadzane za pomocÄ… statystycznych i losowych sygnatur,
+ktÃ³re efektywnie wykrywajÄ… mutujÄ…cÄ… siÄ™ zawartoÅ›Ä‡ spamu. WejÅ›cie od
+uÅ¼ytkownikÃ³w jest kontrolowane poprzez przypisanÄ… reputacjÄ™ bazowanÄ…
+na raportach i zapewnieniach, ktÃ³re sÅ‚uÅ¼Ä… do obliczania poziomÃ³w
+ufnoÅ›ci zwiÄ…zanych z poszczegÃ³lnymi sygnaturami.
 
 %prep
 %setup -q -n razor-agents-%{version}
