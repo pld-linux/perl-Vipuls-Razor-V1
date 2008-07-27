@@ -7,7 +7,7 @@ Summary:	Spam should not be propagated beyond necessity
 Summary(pl.UTF-8):	Spam nie powinien być rozsiewany bez potrzeby
 Name:		perl-Vipuls-Razor-V1
 Version:	1.20
-Release:	3
+Release:	4
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
