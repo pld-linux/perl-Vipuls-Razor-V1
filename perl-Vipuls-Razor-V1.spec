@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_with	tests	# perform "make test" (needs working, not busy /dev/audio!)
 #
-%include	/usr/lib/rpm/macros.perl
 Summary:	Spam should not be propagated beyond necessity
 Summary(pl.UTF-8):	Spam nie powinien być rozsiewany bez potrzeby
 Name:		perl-Vipuls-Razor-V1
